@@ -7,27 +7,37 @@
 *.dll
 *.so
 *.dylib
+.DS_Store
 
 # Test binary, built with `go test -c`
 *.test
 
-# Code coverage profiles and other test artifacts
+# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-coverage.*
-!coverage.go
-*.coverprofile
-profile.cov
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
 # Go workspace file
 go.work
-go.work.sum
 
-# env file
-.env
+# Editor Files
+.idea
+.vscode
+*.vsix
+.history
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# Local configuration
+*.env
+*netrc
+config.yml
+*.crt
+*.csr
+*.key
+./certs
+*.log
+*.db
+
+# Build artifacts
+application
+.DS_Store
